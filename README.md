@@ -5,7 +5,7 @@ The Pytorch implementation of our MICCAI22 paper "Asymmetry Disentanglement Netw
 
 (This reprository is still under development.)
 
-<div align=center><img src="framework.png" width="945px" height="276px"/></div>
+<div align=center><img src="framework.png" width="787px" height="230px"/></div>
 
 
 
