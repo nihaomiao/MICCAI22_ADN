@@ -138,7 +138,7 @@ if warm_start:
 else:
     subject_asym_msk_t = labels_t.unsqueeze(dim=1) == 1
     subject_asym_gt_t = asym_map_t * subject_asym_msk_t
-    # 1. the size of subject asym should be the same as the size of stroke
+    # 1. the size of subject asym (i.e. pathological asym) should be similar to the size of stroke
     reg_loss1 = nn.L1Loss()(subject_asym_conf_t.mean(), subject_asym_gt_t.mean())
     # 2. subject asym should from subject + anatomy
     sym_map_mask_t = asym_map_t == 0
