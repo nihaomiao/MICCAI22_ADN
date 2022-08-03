@@ -7,6 +7,10 @@ The Pytorch implementation of our MICCAI22 paper [Asymmetry Disentanglement Netw
 
 <div align=center><img src="framework.png" width="787px" height="230px"/></div>
 
+Dependencies
+----
+Python 3.7.10, Pytorch 1.10.2, etc.
+
 Quick Start
 ----
 ADN includes three parts: transformation network $T$, assymmetry extraction network $D$, and segmentation network $F$. In our experiments, we first train $T$, and then fix $T$ and jointly train $D$ and $F$. The following codes show a simple example that how to train the network $T$.
