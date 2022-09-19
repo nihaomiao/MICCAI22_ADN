@@ -5,6 +5,13 @@ The Pytorch implementation of our MICCAI22 paper [Asymmetry Disentanglement Netw
 
 <div align=center><img src="framework.png" width="787px" height="230px"/></div>
 
+Example Results
+----
+
+ADN can separate different kinds of asymmetries in NCCT images ( $A$: total asymmetry map, $P$: pathologigcal asymmetry map, $Q$: intrinsic anatomical asymmetry map) and generate pathology-salient ( $X+Q$ ) or pathology-compensated ( $X+P$ ) images for better clinical examination. 
+
+<div align=center><img src="asym_res.png" width="787px" height="286px"/></div>
+
 Dependencies
 ----
 Python 3.7.10, Pytorch 1.10.2, etc.
