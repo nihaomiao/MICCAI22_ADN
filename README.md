@@ -5,6 +5,13 @@ The Pytorch implementation of our MICCAI22 paper [Asymmetry Disentanglement Netw
 
 <div align=center><img src="framework.png" width="787px" height="230px"/></div>
 
+Example Results
+----
+
+ADN can separate different kinds of asymmetries in NCCT images ( $A$: total asymmetry map, $P$: pathologigcal asymmetry map, $Q$: intrinsic anatomical asymmetry map) and generate pathology-salient ( $X+Q$ ) or pathology-compensated ( $X+P$ ) images for better clinical examination. 
+
+<div align=center><img src="asym_res.png" width="787px" height="286px"/></div>
+
 Dependencies
 ----
 Python 3.7.10, Pytorch 1.10.2, etc.
@@ -167,16 +174,26 @@ Citing ADN
 ----
 If you find our approaches useful in your research, please consider citing:
 ```
-@article{ni2022asymmetry,
-  title={Asymmetry Disentanglement Network for Interpretable Acute Ischemic Stroke Infarct Segmentation in Non-Contrast CT Scans},
-  author={Ni, Haomiao and Xue, Yuan and Wong, Kelvin and Volpi, John and Wong, Stephen TC and Wang, James Z and Huang, Xiaolei},
-  journal={arXiv preprint arXiv:2206.15445},
-  year={2022}
+@InProceedings{10.1007/978-3-031-16452-1_40,
+author="Ni, Haomiao
+and Xue, Yuan
+and Wong, Kelvin
+and Volpi, John
+and Wong, Stephen T. C.
+and Wang, James Z.
+and Huang, Xiaolei",
+title="Asymmetry Disentanglement Network for Interpretable Acute Ischemic Stroke Infarct Segmentation in Non-contrast CT Scans",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="416--426",
+isbn="978-3-031-16452-1"
 }
 ```
-For any problems with the code, please feel free to contact me: homerhm.ni@gmail.com
+For questions with the code, please feel free to contact me: homerhm.ni@gmail.com
 
 Acknowledgement
 -----
-We borrow somes codes from [unsup3d](https://github.com/elliottwu/unsup3d) and [unet3d](https://github.com/wolny/pytorch-3dunet/tree/master/pytorch3dunet/unet3d).
+Part of our code was borrowed from [unsup3d](https://github.com/elliottwu/unsup3d) and [unet3d](https://github.com/wolny/pytorch-3dunet/tree/master/pytorch3dunet/unet3d). We thank the authors of these repositories for their valuable implementations.
 
