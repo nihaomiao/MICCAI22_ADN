@@ -191,7 +191,7 @@ pages="416--426",
 isbn="978-3-031-16452-1"
 }
 ```
-For questions with the code, please feel free to contact me: homerhm.ni@gmail.com
+For questions with the code, please feel free to open an issue or contact me: homerhm.ni@gmail.com
 
 Acknowledgement
 -----
