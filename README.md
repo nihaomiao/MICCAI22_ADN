@@ -156,10 +156,11 @@ optimizer.step()
 DONE
 ----
 The network structure of ADN
+The complete process of training and testing 
 
 TODO
 ----
-The complete process of training and testing
+The illustration of data preparation, training and testing
 
 Citing ADN
 ----
