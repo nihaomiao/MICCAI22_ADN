@@ -27,7 +27,7 @@ NUM_EXAMPLES = 1000  # not real ct number in dataset because randomly choose CT 
 MAX_EPOCH = 100
 USE_REG_EPOCH = 2  # increase this number to extend the warm-start epochs
 GPU = "2, 3, 4, 5, 6, 7"
-root_dir = "/data/hfn5052/StrokeCT/adn"
+root_dir = "/data/StrokeCT/adn"
 pos_weight = 1.0
 gamma = 64./255
 assert pos_weight == 1.0

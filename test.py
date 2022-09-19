@@ -94,14 +94,7 @@ def main():
     args = get_arguments()
     sys.stdout = Logger(args.log_path, sys.stdout, mode="w")
     args.postfix = "-" + args.postfix
-    use_norm = "norm" in args.postfix
-    use_dn = "dn" in args.postfix
-    print("use dn", use_dn)
-    print("use norm", use_norm)
-    if use_dn:
-        data_dir = "/data/hfn5052/StrokeCT/AISD_data_resample_denoise_mct_seg"
-    else:
-        data_dir = "/data/hfn5052/StrokeCT/AISD_data_resample"
+    data_dir = "/data/StrokeCT/AISD_data_resample"
     print(data_dir)
     MSK_PATH = os.path.join(args.root_dir, "ckpt_"+str(args.num_epoch)+args.postfix, "msk")
     os.makedirs(MSK_PATH, exist_ok=True)
