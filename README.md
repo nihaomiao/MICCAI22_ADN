@@ -174,16 +174,26 @@ Citing ADN
 ----
 If you find our approaches useful in your research, please consider citing:
 ```
-@article{ni2022asymmetry,
-  title={Asymmetry Disentanglement Network for Interpretable Acute Ischemic Stroke Infarct Segmentation in Non-Contrast CT Scans},
-  author={Ni, Haomiao and Xue, Yuan and Wong, Kelvin and Volpi, John and Wong, Stephen TC and Wang, James Z and Huang, Xiaolei},
-  journal={arXiv preprint arXiv:2206.15445},
-  year={2022}
+@InProceedings{10.1007/978-3-031-16452-1_40,
+author="Ni, Haomiao
+and Xue, Yuan
+and Wong, Kelvin
+and Volpi, John
+and Wong, Stephen T. C.
+and Wang, James Z.
+and Huang, Xiaolei",
+title="Asymmetry Disentanglement Network for Interpretable Acute Ischemic Stroke Infarct Segmentation in Non-contrast CT Scans",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="416--426",
+isbn="978-3-031-16452-1"
 }
 ```
-For any problems with the code, please feel free to contact me: homerhm.ni@gmail.com
+For questions with the code, please feel free to contact me: homerhm.ni@gmail.com
 
 Acknowledgement
 -----
-We borrow somes codes from [unsup3d](https://github.com/elliottwu/unsup3d) and [unet3d](https://github.com/wolny/pytorch-3dunet/tree/master/pytorch3dunet/unet3d).
+Part of our code was borrowed from [unsup3d](https://github.com/elliottwu/unsup3d) and [unet3d](https://github.com/wolny/pytorch-3dunet/tree/master/pytorch3dunet/unet3d). We thank the authors of these repositories for their valuable implementations.
 
