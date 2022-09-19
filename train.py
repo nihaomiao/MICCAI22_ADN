@@ -22,7 +22,6 @@ import torchvision.transforms as transforms
 start = timeit.default_timer()
 INPUT_SIZE = [256, 256]
 BATCH_SIZE = 6
-VAL_BATCH_SIZE = 6
 NUM_SLICES = 40
 NUM_EXAMPLES = 1000  # not real ct number in dataset because randomly choose CT per step
 MAX_EPOCH = 100
@@ -36,7 +35,6 @@ useless_label = [4]
 postfix = "-adn-wl%.1f" % (pos_weight)  # using dropout, sym rotation, gray-white matter
 data_dir = "/data/StrokeCT/AISD_data_resample"
 train_txt = "/data/StrokeCT/aisd_train.txt"
-val_txt = "/data/StrokeCT/aisd_test.txt"
 class_weight = np.array([1.0, pos_weight])
 LEARNING_RATE = 1e-4
 SEG_REC_RATE = 1
@@ -122,8 +120,6 @@ def get_arguments():
     parser.add_argument('--save-img-freq', default=100, type=int,
                         metavar='N', help='save image frequency')
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE,
-                        help="Number of images sent to the network in one step.")
-    parser.add_argument("--val-batch-size", type=int, default=VAL_BATCH_SIZE,
                         help="Number of images sent to the network in one step.")
     parser.add_argument("--data-dir", type=str, default=data_dir,
                         help="Path to the text file listing the images in the dataset.")
