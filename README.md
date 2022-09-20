@@ -174,21 +174,13 @@ Citing ADN
 ----
 If you find our approaches useful in your research, please consider citing:
 ```
-@InProceedings{10.1007/978-3-031-16452-1_40,
-author="Ni, Haomiao
-and Xue, Yuan
-and Wong, Kelvin
-and Volpi, John
-and Wong, Stephen T. C.
-and Wang, James Z.
-and Huang, Xiaolei",
-title="Asymmetry Disentanglement Network for Interpretable Acute Ischemic Stroke Infarct Segmentation in Non-contrast CT Scans",
-booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2022",
-year="2022",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="416--426",
-isbn="978-3-031-16452-1"
+@inproceedings{ni2022asymmetry,
+  title={Asymmetry Disentanglement Network for Interpretable Acute Ischemic Stroke Infarct Segmentation in Non-Contrast CT Scans},
+  author={Ni, Haomiao and Xue, Yuan and Wong, Kelvin and Volpi, John and Wong, Stephen TC and Wang, James Z and Huang, Xiaolei},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={416--426},
+  year={2022},
+  organization={Springer}
 }
 ```
 For questions with the code, please feel free to open an issue or contact me: homerhm.ni@gmail.com
